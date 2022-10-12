@@ -89,21 +89,26 @@ span{
 }
 .links{
     padding: 32px 0;
+    
 }
 .icon-envelop::before{
-    display: inline-block;
+    display: inline-flex;
     content: "";
     width: 16px;
     height: 12px;
-    background-image: url();
+    background-image: url(../images/envelope.svg);
+    margin-right: 10px;
+        
 }
 .icon-tel::before {
-    display: inline-block;
+    display: inline-flex;
     content: "";
-    width: 16px;
-    height: 12px;
-    background-image: url(../css/svgxuse.js#icon-smartphone);
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/smartphone.svg);
+    margin-right: 10px;
 }
+
 .site-nav .link{
     font-family: 'Roboto'sans-serif;
     font-style: normal;
@@ -122,7 +127,7 @@ span{
 .contact-nav{
     display: inline-flex;
     gap: 50px;
-             
+      
     /* outline: 1px solid red; */
 }
 .contact-nav .link{
@@ -132,7 +137,8 @@ span{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    text-decoration: none; 
+    text-decoration: none;
+    
 }
 
 ul{
@@ -143,11 +149,14 @@ ul{
 
 /* Герой */
 .hero{
-    /* background-color: var(--bgr-color); */
+    background-color: var(--bgr-color);
     color: var(--hero-title);
     text-align: center;
+    
+}
+.hero-container{
     padding-top: 200px;
-    padding-bottom: 200px;    
+    padding-bottom: 200px;
 }
 .hero-title{
     font-weight: 900;
@@ -156,7 +165,8 @@ ul{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;     
+    margin-bottom: 30px;
+       
 }
 
 .hero-btn{
@@ -214,30 +224,25 @@ ul{
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    background-size: contain;
     background-repeat: no-repeat;
-    
-    
+        
 }
 
 .icon-antena::before{
-    background-image: url(../images/antenna.svg);
-    background-position: 50% 50%;
+    background-image: url(../images/antenna.svg);  
 }
+
 
 .icon-clock::before {
     background-image: url(../images/clock.svg);
-    background-position: 50% 50%;
 }
 
 .icon-diagram::before {
     background-image: url(../images/diagram.svg);
-    background-position: 50% 50%;
 }
 
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
-    background-position: 50% 50%;
 }
 
 .section-title{
@@ -280,10 +285,7 @@ ul{
     background-color: var(--bgr-second-color);
     
 }
-.team-list{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
+
 .section-team-title{
     font-weight: 500;
     font-size: 16px;
@@ -305,6 +307,30 @@ ul{
 .team-content{
     text-align: center;
     padding: 30px 0;
+}
+.social-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+       
+    outline: 1px solid red;
+}
+.social-link{
+    display: flex;
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+.social-icon{
+    display: flex;
+    fill: currentColor;
+     
+  
 }
 
 /* Footer */
